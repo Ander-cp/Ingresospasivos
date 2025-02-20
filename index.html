@@ -1,13 +1,9 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aprende a generar ingresos pasivos con estrategias probadas como marketing de afiliados, blogs y cursos digitales.">
-    <meta name="keywords" content="ingresos pasivos, ganar dinero online, marketing de afiliados, blogging, cursos digitales">
-    <meta name="author" content="Gana Dinero Pasivamente">
-    <meta name="robots" content="index, follow">
     <title>Gana Dinero Pasivamente</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -73,29 +69,95 @@
             font-size: 14px;
             color: #888;
         }
+        .comment-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: #292929;
+            border-radius: 10px;
+        }
+        .comment-section h2 {
+            color: #ff8c00;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            resize: none;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #ff3d00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #ff8c00;
+        }
+        .comments {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .comment {
+            background: #1e1e1e;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>Gana Dinero Pasivamente</header>
     <div class="container">
         <h1>Genera Ingresos Mientras Duermes</h1>
         <p>Explora nuestras estrategias probadas y comienza a ganar dinero en línea.</p>
+        
         <div class="method">
             <h2>Marketing de Afiliados</h2>
             <p>Recomienda productos y gana comisiones por cada venta.</p>
-            <a href="https://www.amazon.com/?tag=tu-codigo-afiliado" class="cta" target="_blank" rel="noopener">Aprender más</a>
+            <a href="https://www.amazon.com/?tag=ingreso01-21" class="cta" target="_blank">Aprender más</a>
         </div>
         <div class="method">
             <h2>Hosting y Blogs</h2>
             <p>Crea un blog rentable con un hosting confiable.</p>
-            <a href="https://www.bluehost.com/track/tu-codigo-afiliado/" class="cta" target="_blank" rel="noopener">Ver cómo funciona</a>
+            <a href="https://www.bluehost.com/track/tu-codigo-afiliado/" class="cta" target="_blank">Ver cómo funciona</a>
         </div>
         <div class="method">
             <h2>Cursos y Productos Digitales</h2>
             <p>Vende cursos y productos digitales con Hotmart.</p>
-            <a href="https://go.hotmart.com/tu-codigo-afiliado" class="cta" target="_blank" rel="noopener">Comenzar ahora</a>
+            <a href="https://go.hotmart.com/tu-codigo-afiliado" class="cta" target="_blank">Comenzar ahora</a>
+        </div>
+
+        <div class="comment-section">
+            <h2>Deja tu comentario</h2>
+            <textarea id="commentInput" placeholder="Escribe tu comentario..."></textarea>
+            <button onclick="addComment()">Enviar</button>
+            <div class="comments" id="commentsList"></div>
         </div>
     </div>
     <div class="footer">© 2025 Gana Dinero Pasivamente | Todos los derechos reservados</div>
+
+    <script>
+        function addComment() {
+            var commentInput = document.getElementById("commentInput");
+            var commentText = commentInput.value.trim();
+            if (commentText !== "") {
+                var commentList = document.getElementById("commentsList");
+                var newComment = document.createElement("div");
+                newComment.classList.add("comment");
+                newComment.textContent = commentText;
+                commentList.appendChild(newComment);
+                commentInput.value = "";
+            }
+        }
+    </script>
 </body>
 </html>
