@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/c449a60222150.js" data-cmp-host="d.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="0"></script> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1119249998214337"
-     crossorigin="anonymous"></script>
-    <meta name="google-adsense-account" content="ca-pub-1119249998214337">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-88VMM19S2R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-88VMM19S2R');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline';">
@@ -23,10 +9,24 @@
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, proxy-revalidate">
-    <title>Gana Dinero Pasivamente</title>
     <meta name="description" content="Descubre estrategias efectivas para generar ingresos pasivos y ganar dinero en línea de manera automatizada.">
     <meta name="keywords" content="ingresos pasivos, ganar dinero en línea, marketing de afiliados, dropshipping, inversión">
     <meta name="author" content="TuNombre">
+    <title>Gana Dinero Pasivamente</title>
+    
+    <!-- External Resources -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1119249998214337" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-88VMM19S2R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-88VMM19S2R');
+    </script>
+    <script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/c449a60222150.js" data-cmp-host="d.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="0"></script> 
+    
+    <!-- Styles -->
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -117,7 +117,7 @@
         }
         .comment-section textarea {
             width: 100%;
-            height: 150px; /* Aumentar la altura */
+            height: 150px;
             padding: 12px;
             font-size: 16px;
             border-radius: 5px;
@@ -131,6 +131,7 @@
         <h1>Genera Ingresos Mientras Duermes</h1>
         <p>Explora nuestras estrategias probadas y comienza a ganar dinero en línea.</p>
         
+        <!-- Methods -->
         <div class="method">
             <h2>Marketing de Afiliados</h2>
             <p>Recomienda productos y gana comisiones por cada venta.</p>
@@ -149,18 +150,21 @@
             <a href="#" class="cta">Ver opciones</a>
         </div>
 
+        <!-- Social Links -->
         <div class="social-links">
             <a href="https://www.facebook.com/tu-pagina" target="_blank" rel="noopener noreferrer">🔗 Facebook</a>
             <a href="https://twitter.com/tu-cuenta" target="_blank" rel="noopener noreferrer">🐦 Twitter</a>
             <a href="https://www.instagram.com/tu-cuenta" target="_blank" rel="noopener noreferrer">📷 Instagram</a>
         </div>
 
+        <!-- Subscription Form -->
         <div class="subscription">
             <h2>Suscríbete para recibir más estrategias</h2>
             <input type="email" id="emailInput" placeholder="Tu correo electrónico">
             <button onclick="subscribe()">Suscribirse</button>
         </div>
 
+        <!-- Comment Section -->
         <div class="comment-section">
             <h2>Deja tu comentario</h2>
             <textarea id="commentInput" placeholder="Escribe tu comentario..."></textarea>
@@ -168,6 +172,7 @@
             <div class="comments" id="commentsList"></div>
         </div>
 
+        <!-- Contact Form -->
         <div class="contact-form">
             <h2>Contacto</h2>
             <input type="text" placeholder="Tu nombre">
@@ -178,11 +183,12 @@
     </div>
     <div class="footer">© 2025 Gana Dinero Pasivamente | Todos los derechos reservados</div>
 
+    <!-- JavaScript -->
     <script>
         function addComment() {
             var commentInput = document.getElementById("commentInput");
             var commentText = commentInput.value.trim();
-            if (commentText !== "") {
+            if (commentText) {
                 var commentList = document.getElementById("commentsList");
                 var newComment = document.createElement("div");
                 newComment.classList.add("comment");
@@ -191,9 +197,10 @@
                 commentInput.value = "";
             }
         }
+
         function subscribe() {
             var emailInput = document.getElementById("emailInput").value;
-            if (emailInput !== "") {
+            if (emailInput) {
                 alert("Gracias por suscribirte! Te enviaremos más estrategias de ingresos pasivos.");
                 document.getElementById("emailInput").value = "";
             }
